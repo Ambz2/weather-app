@@ -526,7 +526,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"search\": () => (/* binding */ search)\n/* harmony export */ });\nasync function search(city = 'London', units = 'metric') {\n    try {\n        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&APPID=a824f5a0abcab3b4759d19626fe7ba20`\n            )\n        let localeData = await response.json()\n        return localeData\n    } catch(err) {\n        console.log(err)\n    }\n}\n\n\n\n//# sourceURL=webpack://weather-app/./src/search.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"search\": () => (/* binding */ search)\n/* harmony export */ });\nasync function search(city = 'London', units = 'metric') {\n    try {\n        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&APPID=a824f5a0abcab3b4759d19626fe7ba20`\n            )\n        let localeData = await response.json()\n        return localeData\n    } catch(err) {\n        console.log(err)\n    }\n}\n\n\n\n//# sourceURL=webpack://weather-app/./src/search.js?");
 
 /***/ }),
 
