@@ -62,7 +62,7 @@ export class mainInfo {
 
     async makeWeatherIcon(iconid) {
         this.icon = document.createElement('img');
-        this.iconsrc = await fetch(`http://openweathermap.org/img/wn/${iconid}@2x.png`)
+        this.iconsrc = await fetch(`https://openweathermap.org/img/wn/${iconid}@2x.png`)
         this.icon.src = this.iconsrc.url
         this.element.appendChild(this.icon)
     }
