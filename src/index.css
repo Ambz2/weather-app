@@ -58,7 +58,7 @@ body {
 
 .search-button {
     float:left;
-    min-width:10%;
+    width:10%;
     padding:10px;
     background:#79c3ff;
     color:white;
@@ -82,7 +82,7 @@ body {
     }
 
     #searchbar {
-        width:40%
+        width:100%
     }
 }
 
@@ -90,6 +90,12 @@ main {
     display:flex;
     min-width:30%;
     margin:20px;
+    background-color: black;
+    opacity: 80%;
+    padding:10px;
+    -moz-box-shadow: 0px 0px 3px 10px black;
+    -webkit-box-shadow: 0px 0px 3px 10px black;
+    box-shadow: 0px 0px 3px 10px black;
 }
 
 
@@ -103,6 +109,11 @@ main {
 aside {
     display:flex;
     margin:10px;
+    background-color: black;
+    opacity: 80%;
+    -moz-box-shadow: 0px 0px 3px 10px black;
+    -webkit-box-shadow: 0px 0px 3px 10px black;
+    box-shadow: 0px 0px 3px 10px black;
 }
 
 .weatherDetailIcon {
@@ -132,6 +143,7 @@ aside {
     align-items:center;
     text-align:center;
     font-weight:800;
+    
 }
 
 #city { 
