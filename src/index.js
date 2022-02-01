@@ -64,9 +64,3 @@ searchform.addEventListener(
     } 
 )
 
-function celsiusToFarenheight(celsius) {
-    return (celsius * 9/5 +32)
-}
-function farenheightToCelcius(farenheight) {
-    return (celsius * 9/5 +32)
-}
