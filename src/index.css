@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url('./background2.jpg');
+    background-image: url('./background3.jpg');
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center center;
@@ -60,17 +60,18 @@ body {
     background:#79c3ff;
     color:white;
     font-size:17px;
-    border: 1px solid grey;
+    border: none;
     border-left:none;
     border-radius: 0px 5px 5px 0px;
     cursor:pointer;
+    outline:none;
 }
 
 .search-button:hover {
     background-color:#0b7dda;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
     #content {
         display:flex;
         flex-direction:column;
@@ -115,8 +116,7 @@ aside {
     align-items:center;
     gap:20px;
     font-size:22px;
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    font-weight:300;
+    text-shadow: 0 0 8px #000000, 0 0 8px #000000;
     padding:0;
     min-width:200px
 }
@@ -128,6 +128,7 @@ aside {
     flex-direction:column;
     align-items:center;
     text-align:center;
+    font-weight:800;
 }
 
 #city { 

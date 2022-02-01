@@ -96,7 +96,7 @@ export class sideInfo {
 
 
         this.feelsLike = new weatherDetail('Feels like:', feelslike, thermometer);
-        this.humidity = new weatherDetail('Humitidy:', humidity, droplet);
+        this.humidity = new weatherDetail('Humidity:', humidity, droplet);
         this.windspeed = new weatherDetail('Wind speed:', windspeed, wind)
     
         this.appendToElement(this.element, [
