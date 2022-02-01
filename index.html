@@ -10,9 +10,12 @@
 <body>
     <script src='main.js' defer></script>
     <div class='search-container'>
-        <form id='search-form'>
-            <input type="search" id='searchbar' placeholder="Enter a city!">
-            <button type="submit" class='search-button'><i class="fa fa-search"></i></button>
+        <form id='search-form' novalidate>
+            <div class='search-input'>
+                <input type="search" id='searchbar' placeholder="Enter a city!">
+                <button type="submit" class='search-button'><i class="fa fa-search"></i></button>
+            </div>
+            <span class='error' aria-live="polite"></span>
         </form>
     </div>
     <div id='content'>
