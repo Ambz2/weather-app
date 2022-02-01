@@ -3,9 +3,11 @@ import * as controlDom from './controlDom.js'
 import * as search from './search.js'
 import {secondsToHours, format, add} from 'date-fns'
 
+const error = document.querySelector('.error')
 
 async function createDisplay(city, units) {
     try {
+        error.textContent = ''
         let data = await search.search(city, units)
         let time = convertToReadableTime(data.timezone)
         let description = titleCase(data.weather[0].description)
@@ -34,11 +36,13 @@ async function createDisplay(city, units) {
         }
         aside.appendChild(sideInfo.element)
     } catch(err) {
-        console.log(err)
+        showError(err)
     }
 }
 
-
+function showError() {
+    error.textContent = 'Not found. Did you type that in correctly?'
+}
 
 function convertToReadableTime(timezone) {
     let timeDifference = {hours:secondsToHours(timezone)};

@@ -5,7 +5,7 @@ export async function search(city = 'London', units = 'metric') {
         let localeData = await response.json()
         return localeData
     } catch(err) {
-        console.log(err)
+        console.log(err=='404')
     }
 }
 
